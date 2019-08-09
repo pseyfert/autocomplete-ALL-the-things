@@ -107,7 +107,7 @@ sub on_user_command {
 
             # Here we are using three named groups: s, b, p for quotes, braces
             # and parenthesis.
-            $char_class_before      = '((?<q>["\'`])|(?<b>\[)|(?<p>\())';
+            $char_class_before      = '((?<q>[:"\'`])|(?<b>\[)|(?<p>\())';
 
             $matcher                = generate_matcher('.*?');
 
